@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Good Vibes Only</string>
+
+    <string name="hits">Hits songs</string>
+
+    <string name="healing">Healing music</string>
+
+    <string name="rom">Romanian hits</string>
+
+    <string name="party">Party music</string>
+
+</resources>

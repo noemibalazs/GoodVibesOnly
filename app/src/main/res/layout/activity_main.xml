@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.goodvibesonly.MainActivity">
+
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_alignParentLeft="true"
+        android:layout_width="16dp"
+        android:layout_height="match_parent" />
+
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:layout_width="16dp"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingLeft="36dp"
+            android:paddingRight="20dp"
+            android:paddingTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/healing_icon"
+                android:src="@drawable/healing"
+                style="@style/imageViewStyle" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorBackground"
+                android:padding="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/healing_text_view"
+                    android:text="@string/healing"
+                    android:gravity="center"
+                    style="@style/category" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="36dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/hits_icon"
+                android:src="@drawable/hits"
+                style="@style/imageViewStyle" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorBackground"
+                android:padding="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/hits_text_view"
+                    android:text="@string/hits"
+                    android:gravity="center"
+                    style="@style/category"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="36dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon_romanian"
+                android:src="@drawable/rom"
+                style="@style/imageViewStyle" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorBackground"
+                android:padding="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/romanian_text_view"
+                    android:text="@string/rom"
+                    android:gravity="center"
+                    style="@style/category"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="36dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon_party"
+                android:src="@drawable/party"
+                style="@style/imageViewStyle" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorBackground"
+                android:padding="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/party_text_view"
+                    android:text="@string/party"
+                    android:gravity="center"
+                    style="@style/category"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

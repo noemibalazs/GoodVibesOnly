@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:id="@+id/general"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:layout_width="16dp"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/general_image"
+        android:paddingTop="6dp"
+        android:paddingLeft="26dp"
+        android:src="@drawable/fonsi"
+        android:layout_width="110dp"
+        android:layout_height="110dp" />
+
+    <LinearLayout
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:text="Louis Fonsi"
+            android:gravity="bottom"
+            android:textColor="@android:color/black"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:text="Echame la Culpa"
+            android:gravity="bottom"
+            android:textColor="@android:color/black"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <View
+            android:id="@+id/view_id"
+            android:layout_width="220dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/textview3"
+            android:text="youtube.com"
+            android:gravity="top|bottom"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="1dp"
+            android:textColor="@android:color/black"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+    </LinearLayout>
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:padding="9dp"
+            android:src="@drawable/arrow"
+            tools:ignore="UnknownId" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
