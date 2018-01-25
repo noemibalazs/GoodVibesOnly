@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         TextView healingText = findViewById(R.id.healing_text_view);
         healingText.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,12 +1,15 @@
 package com.example.android.goodvibesonly;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -35,8 +38,6 @@ public class PodcastActivity extends AppCompatActivity {
             else if (focusChange == AudioManager.AUDIOFOCUS_LOSS){
                 releaseMediaPlayer();
             }
-
-
         }
     };
 
@@ -44,6 +45,15 @@ public class PodcastActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.general_list);
+
+        Button button = findViewById(R.id.general_list_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PodcastActivity.this, HealingMusikActivity.class);
+                startActivity(intent);
+            }
+        });
 
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 

@@ -93,7 +93,6 @@
             android:src="@drawable/arrow"
             tools:ignore="UnknownId" />
 
-
     </LinearLayout>
 
 </RelativeLayout>
