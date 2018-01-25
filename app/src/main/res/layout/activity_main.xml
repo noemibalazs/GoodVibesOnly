@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -153,6 +152,40 @@
                 <TextView
                     android:id="@+id/party_text_view"
                     android:text="@string/party"
+                    android:gravity="center"
+                    style="@style/category"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="36dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_podcast"
+                android:src="@drawable/arrow"
+                style="@style/imageViewStyle" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorBackground"
+                android:padding="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/podcast_text_view"
+                    android:text="@string/podcast"
                     android:gravity="center"
                     style="@style/category"/>
 

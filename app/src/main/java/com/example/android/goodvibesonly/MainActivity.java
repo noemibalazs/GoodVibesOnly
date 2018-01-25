@@ -86,5 +86,23 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intentPartyText);
             }
         });
+
+        ImageView podcastIcon = findViewById(R.id.image_podcast);
+        podcastIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentPodcastIcon = new Intent(MainActivity.this, PodcastActivity.class);
+                startActivity(intentPodcastIcon);
+            }
+        });
+
+        TextView podcastTextView = findViewById(R.id.podcast_text_view);
+        podcastTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentPodcastText = new Intent(MainActivity.this, PodcastActivity.class);
+                startActivity(intentPodcastText);
+            }
+        });
     }
 }

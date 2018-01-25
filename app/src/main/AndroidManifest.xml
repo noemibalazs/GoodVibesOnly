@@ -19,39 +19,45 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".PartyMusikActivity"
+        <activity
+            android:name=".PartyMusikActivity"
             android:label="@string/party"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.goodvibesonly.MainActivity" />
         </activity>
-
-        <activity android:name=".HitsMusikActivity"
+        <activity
+            android:name=".HitsMusikActivity"
             android:label="@string/hits"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.goodvibesonly.MainActivity" />
         </activity>
-
-        <activity android:name=".RomanianMusikActivity"
+        <activity
+            android:name=".RomanianMusikActivity"
             android:label="@string/rom"
             android:parentActivityName=".MainActivity">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.android.goodvibesonly.MainActivity" />
-       </activity>
-
-        <activity android:name=".HealingMusikActivity"
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.goodvibesonly.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HealingMusikActivity"
             android:label="@string/healing"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.goodvibesonly.MainActivity" />
         </activity>
-
+        <activity android:name=".PodcastActivity"
+            android:label="@string/podcast"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.goodvibesonly.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
